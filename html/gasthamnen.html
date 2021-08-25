@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <title>Gästhamnen - Djupvik</title>
+    <meta charset="UTF-8" />
+    <link href="../stylesheets/style.css" rel="stylesheet" />
+    <link href="../stylesheets/weather.css" rel="stylesheet" />
+    <link href="../images/logo.png" rel="icon" type="image/png" />
+    <meta name="description" content="Sida med information om gästhamnen, priser samt senaste väderprognosen. " />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.2" />
+    <script src="../js/index.js" type="module"></script>
+    <script src="../js/weatherWidget.js" type="module"></script>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <a tabindex="-1" href="../index.html" id="logo">
+                <img src="../images/logo.png" alt="Djupviks fiskeförenings logga" height=50 width=50>
+            </a>
+            <div id="header-links">
+                <a href="english.html">Information in English</a>
+                <a href="kontakt.html">Kontakta oss</a>
+            </div>
+
+            <img tabindex="1" aria-label="Navigerings meny" src="../images/menu_black_18dp.svg" alt="Meny ikon" height=40 width=40 class="collapsible">
+            <div class="content">
+                <nav>
+                    <ul>
+                        <li> <a href="../index.html">Startsida</a></li>
+                        <li> <a href="#" id="activePage">Gästhamnen</a></li>
+                        <li> <a href="turism.html">Turistmål</a></li>
+                        <li> <a href="medlemsinfo.html">Medlemsinfo</a></li>
+                        <li> <a href="historia.html">Djupviks historia</a></li>
+                        <li class="header-links-content"> <a href="english.html">Information in English</a></li>
+                        <li class="header-links-content"> <a href="kontakt.html">Kontakta oss</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <aside id="site-presentation">
+        </aside>
+
+        <main>
+            <section>
+                <h1>Gästhamnen</h1>
+                <p>
+                    Gästbåtar är hjärtligt välkomna! Vid normalvattendjup är djupet 3 meter i huvuddelen av hamnen. Vatten och el finns utdraget på kajerna. I land kan vi erbjuda ett modernt servicehus med WC, dusch och tvättmaskin.
+                </p>
+                <b>
+                    Ring gärna hamnfogden för att få reda på aktuellt läge.
+                </b>
+
+                <article>
+                    <h2>Priser</h2>
+                    <p>
+                        Dygnshyra 150:- /dygn*<br> El-anslutning 50:-/dygn<br>
+                        <p><br>*inkluderat kort för tillträde till servicehuset och 20:- för två duschar</p>
+                </article>
+                <article>
+                    <h2>Kontakt</h2>
+                    <p>
+                        Hamnfogde Bo Lautin <br>Mobil 0707 - 92 03 10
+                    </p>
+                </article>
+                <article>
+                    <h2>Väderprognos</h2><br>
+                    <p>Nedan hittar du en väderprognos som använder data från SMHI. Den visar det aktuella vädret hos oss i Djupvik.</p>
+
+                    <div id="smhi-widget"></div>
+
+                </article>
+                <picture id="gasthamnen-img">
+                    <source srcset="../images/D-12_mid.jpg" media="(min-width: 1000px) and (max-width: 1499px)">
+                    <source srcset="../images/D-12_max.jpg" media="(min-width: 1500px)">
+                    <img src="../images/D-12_min.jpg" alt="Djupviks gästhamn med båtar och hus vid en strand">
+                </picture>
+            </section>
+        </main>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li> <a href="../index.html">Startsida</a></li>
+                    <li> <a href="gasthamnen.html ">Gästhamnen</a></li>
+                    <li> <a href="turism.html ">Turistmål</a></li>
+                    <li> <a href="medlemsinfo.html ">Medlemsinfo</a></li>
+                    <li> <a href="historia.html ">Djupviks historia</a></li>
+                    <li> <a href="kontakt.html ">Kontakta oss</a></li>
+                    <li><a href="english.html ">Information in English</a></li>
+                </ul>
+            </nav>
+
+            <a id="link-to-form" href="formular.html">Har du någon fråga? Klicka här för att komma till vårt formulär</a>
+
+            <p id="copy-right">
+                Copy right © Djupvikshamn.se, info@djupvikshamn.se
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

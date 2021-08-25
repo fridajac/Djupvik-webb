@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <title>Kontaktformulär - Djupvik</title>
+    <meta charset="UTF-8" />
+    <link href="../stylesheets/style.css" rel="stylesheet" />
+    <link href="../images/logo.png" rel="icon" type="image/png" />
+    <meta name="description" content="Sida med formulär för att ställa en fråga till Djupviks fiskeförening." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.2" />
+    <script src="../js/index.js" type="module"></script>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <a tabindex="-1" href="../index.html" id="logo">
+                <img src="../images/logo.png" alt="Djupviks fiskeförenings logga" height=50 width=50>
+            </a>
+            <div id="header-links">
+                <a href="english.html">Information in English</a>
+                <a href="kontakt.html">Kontakta oss</a>
+            </div>
+
+            <img tabindex="1" aria-label="Navigerings meny" src="../images/menu_black_18dp.svg" alt="Meny ikon" height=40 width=40 class="collapsible">
+            <div class="content">
+                <nav>
+                    <ul>
+                        <li> <a href="../index.html">Startsida</a></li>
+                        <li> <a href="gasthamnen.html">Gästhamnen</a></li>
+                        <li> <a href="turism.html">Turistmål</a></li>
+                        <li> <a href="medlemsinfo.html">Medlemsinfo</a></li>
+                        <li> <a href="historia.html">Djupviks historia</a></li>
+                        <li class="header-links-content"> <a href="english.html">Information in English</a></li>
+                        <li class="header-links-content"> <a href="kontakt.html">Kontakta oss</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <aside id="site-presentation">
+        </aside>
+
+        <main>
+            <h1>Kontaktformulär</h1>
+            <p>Om du har några frågor om Djupvik är du välkommen att kontakta oss genom formuläret nedan. Vi försöker svara på dina frågor så snabbt vi kan. <br>Vid akut ärende vänligen ring 070-7920310. </p>
+            <p>Obligatoriskt fält*</p>
+            <form method="post" action="bekraftelse.html">
+                <fieldset>
+                    <p>
+                        <label for="Subject">Vad ärendet gäller*</label>
+                        <select name="subject" id="Subject">
+              <option value="båtplats">Båtplats</option>
+              <option value="medlem">Medlem</option>
+              <option value="övrigt">Övrigt</option>
+            </select>
+                    </p>
+
+                    <p>
+                        <label for="Heading">Rubrik*</label>
+                        <input type="text" name="heading" id="Heading" required/>
+                    </p>
+
+                    <p>
+                        <label for="Description">Beskrivning av ärendet*</label>
+                        <textarea name="description" id="Description" required></textarea>
+                    </p>
+
+                    <h2>Dina uppgifter</h2>
+
+                    <p>
+                        <label for="Name">Ditt namn*</label>
+                        <input type="text" name="name" id="Name" required/>
+                    </p>
+
+                    <p>
+                        <label for="Tel">Telefonnummer</label>
+                        <input type="tel" name="tel" id="Tel" />
+                    </p>
+
+                    <p>
+                        <label for="Email">E-mail*</label>
+                        <input type="email" name="email" id="Email" required/>
+                    </p>
+
+                    <h2>Hur önskar du bli kontaktad?</h2>
+
+                    <input type="radio" id="Mail-choice" name="contact" value="mail" checked>
+                    <label for="Mail-choice">Mail</label>
+                    <input type="radio" id="Tel-choice" name="contact" value="tel">
+                    <label for="Tel-choice">Telefon</label>
+                    <input type="radio" id="Not-choice" name="contact" value="not">
+                    <label for="Not-choice">Önskar ej bli kontaktad</label>
+
+                    <p>
+                        <input type="submit" name="submit" value="Skicka" />
+                    </p>
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li> <a href="../index.html">Startsida</a></li>
+                    <li> <a href="gasthamnen.html">Gästhamnen</a></li>
+                    <li> <a href="turism.html">Turistmål</a></li>
+                    <li> <a href="medlemsinfo.html">Medlemsinfo</a></li>
+                    <li> <a href="historia.html">Djupviks historia</a></li>
+                    <li> <a href="kontakt.html">Kontakta oss</a></li>
+                    <li><a href="english.html">Information in English</a></li>
+                </ul>
+            </nav>
+            <p id="copy-right">
+                Copy right © Djupvikshamn.se, info@djupvikshamn.se
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

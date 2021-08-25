@@ -1,0 +1,44 @@
+#smhi-widget table {
+    margin-bottom: 2em;
+    border-collapse: collapse;
+    width: 70%;
+    border-spacing: 0;
+    border: 1px solid black;
+    padding: 0;
+    margin-bottom: 2em;
+}
+
+#smhi-widget table caption {
+    font-size: 110%;
+    font-style: italic;
+}
+
+#smhi-widget table th {
+    background-color: white;
+    font-weight: bold;
+    max-width: 100%;
+    margin-bottom: 2em;
+    background-color: rgb(105, 136, 194);
+    text-align: left;
+    font-weight: bold;
+}
+
+#smhi-widget table th,
+#smhi-widget table td {
+    border: 1px black solid;
+    padding: 10px;
+    text-align: center;
+}
+
+#smhi-widget table tr {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#smhi-widget table tr:hover {
+    background-color: rgb(222, 228, 228);
+}
+
+.arrow {
+    display: inline-block;
+}
